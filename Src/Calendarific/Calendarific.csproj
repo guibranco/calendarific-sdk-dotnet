@@ -8,7 +8,7 @@
     <Title>$(AssemblyName)</Title>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Company>Guilherme Branco Stracini ME</Company>
-    <Copyright>© 2022 Guilherme Branco Stracini ME</Copyright>
+    <Copyright>© 2023 Guilherme Branco Stracini ME</Copyright>
     <PackageProjectUrl>https://guibranco.github.io/calendarific-sdk-dotnet</PackageProjectUrl>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.nuget.md</PackageReadmeFile>
