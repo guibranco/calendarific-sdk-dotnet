@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ProjectGuid>31B5C92F-CD29-4833-8119-F28E3BDCCCFD</ProjectGuid>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>$(AssemblyName)</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>Guilherme Branco Stracini ME</Company>
+    <Copyright>© 2022 Guilherme Branco Stracini ME</Copyright>
+    <PackageProjectUrl>https://guibranco.github.io/calendarific-sdk-dotnet</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.nuget.md</PackageReadmeFile>
+    <Description>Calendarific SDK implementing all API endpoints</Description>
+    <RepositoryType>GIT</RepositoryType>
+    <RepositoryUrl>https://github.com/guibranco/calendarific-sdk-dotnet</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.nuget.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
