@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace SolutionName.UnitTests
+namespace Calendarific.IntegrationTests
 {
     public class UnitTest1
     {
