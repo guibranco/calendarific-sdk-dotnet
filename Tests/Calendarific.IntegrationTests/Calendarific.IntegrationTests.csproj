@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\SolutionName\SolutionName.csproj" />
+    <ProjectReference Include="..\..\Src\Calendarific\Calendarific.csproj" />
   </ItemGroup>
 
 </Project>

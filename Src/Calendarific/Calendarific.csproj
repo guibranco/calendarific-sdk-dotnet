@@ -3,8 +3,8 @@
   <PropertyGroup>
     <ProjectGuid>31B5C92F-CD29-4833-8119-F28E3BDCCCFD</ProjectGuid>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
     <Title>$(AssemblyName)</Title>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Company>Guilherme Branco Stracini ME</Company>
