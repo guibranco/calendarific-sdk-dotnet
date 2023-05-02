@@ -48,9 +48,6 @@ Download the latest zip file from the [Release](https://github.com/guibranco/cal
 
 ### Nuget package manager
 
-[![PacakgeName NuGet Version](https://img.shields.io/nuget/v/Calendarific.svg?style=flat)](https://www.nuget.org/packages/Calendarific/)
-[![PacakgeName NuGet Downloads](https://img.shields.io/nuget/dt/Calendarific.svg?style=flat)](https://www.nuget.org/packages/Calendarific/)
-
 | Package | Version | Downloads |
 |------------------|:-------:|:-------:|
 | **Calendarific** | [![Calendarific NuGet Version](https://img.shields.io/nuget/v/Calendarific.svg?style=flat)](https://www.nuget.org/packages/Calendarific/) | [![Calendarific NuGet Downloads](https://img.shields.io/nuget/dt/Calendarific.svg?style=flat)](https://www.nuget.org/packages/Calendarific/) |
