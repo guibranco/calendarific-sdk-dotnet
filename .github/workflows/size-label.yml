@@ -2,7 +2,7 @@ name: Label based on PR size
 
 on:
   pull_request:
-  worfklow_dispatch:
+  workflow_dispatch:
 
 jobs:
   size-label:
