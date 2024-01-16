@@ -1,7 +1,8 @@
 repo_name: guibranco/calendarific-sdk-dotnet
-report_id: 03a0150135c1ffba910e7e535e3c9995
+report_id: 5433e94d80671c998036acdfc0edaded
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T09:38:01+00:00'
+timestamp: '2024-01-11T12:23:41+00:00'
 requested_by: dependabot[bot]
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -27,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet/blob/main/Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   detection_source: Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   last_updated_by: dependabot[bot]
   last_updated_on: 2023-11-13 09:30:56.000000000 Z
@@ -68,6 +71,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -77,9 +81,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet/blob/main/.github/workflows/codana.yml
   detection_source: ".github/workflows/codana.yml"
-  last_updated_by: Guilherme Branco Stracini
-  last_updated_on: 2023-11-07 00:04:21.000000000 Z
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2023-12-18 09:36:08.000000000 Z
 - name: Moq
   description: The most popular and friendly mocking framework for .NET
   website_url: https://github.com/Moq/moq4
@@ -88,6 +93,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/1628/1434934.png
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet/blob/main/Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   detection_source: Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   last_updated_by: Guilherme Branco Stracini
   last_updated_on: 2023-04-10 16:14:00.000000000 Z
@@ -99,6 +105,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet/blob/main/Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   detection_source: Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   last_updated_by: Guilherme Branco Stracini
   last_updated_on: 2023-04-10 16:14:00.000000000 Z
@@ -111,13 +118,14 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet/blob/main/Calendarific.sln
   detection_source: Calendarific.sln
   last_updated_by: Guilherme Branco Stracini
   last_updated_on: 2023-04-10 16:35:33.000000000 Z
 - name: xUnit
   description: An open source, community-focused unit testing tool
   website_url: http://xunit.github.io/
-  version: 2.6.3
+  version: 2.6.5
   open_source: true
   hosted_saas: false
   category: Build, Test, Deploy
@@ -130,7 +138,7 @@ tools:
 - name: xunit.runner.visualstudio
   description: Visual Studio 2012+ Test Explorer runner for the xUnit.net framework
   package_url: https://www.nuget.org/xunit.runner.visualstudio
-  version: 2.5.5
+  version: 2.5.6
   license: Other
   open_source: true
   hosted_saas: false
@@ -140,4 +148,4 @@ tools:
   detection_source_url: https://github.com/guibranco/calendarific-sdk-dotnet/blob/main/Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   detection_source: Tests/Calendarific.IntegrationTests/Calendarific.IntegrationTests.csproj
   last_updated_by: dependabot[bot]
-  last_updated_on: 2023-12-11 10:43:55.000000000 Z
+  last_updated_on: 2024-01-08 09:25:00.000000000 Z
