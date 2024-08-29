@@ -28,36 +28,6 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=guibranco_calendarific-sdk-dotnet&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=guibranco_calendarific-sdk-dotnet-dotnet)
 
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=guibranco_calendarific-sdk-dotnet&metric=sqale_index)](https://sonarcloud.io/dashboard?id=guibranco_calendarific-sdk-dotnet)
-
-## Usage
-
-```csharp
-using Calendarific;
-using System;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-
-namespace Example
-{
-    class Program
-    {
-        static async Task Main(string[] args)
-        {
-            var client = new CalendarificClient("YOUR_API_KEY");
-
-            var languages = await client.GetLanguagesAsync();
-            Console.WriteLine(languages);
-
-            var countries = await client.GetCountriesAsync();
-            Console.WriteLine(countries);
-
-            var parameters = new Dictionary<string, string> { { "country", "US" }, { "year", "2023" } };
-            var holidays = await client.GetHolidaysAsync(parameters);
-            Console.WriteLine(holidays);
-        }
-    }
-}
-```
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=guibranco_calendarific-sdk-dotnet&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=guibranco_calendarific-sdk-dotnet-dotnet)
 
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=guibranco_calendarific-sdk-dotnet&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=guibranco_calendarific-sdk-dotnet-dotnet)
@@ -97,12 +67,32 @@ Implements all features of Calendarific API available at [Calendarific API Docum
 
 ## Usage
 
-```cs
+```csharp
+using Calendarific;
+using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
-//sample CSharp code showing how to use the lib
-var client = new CalendarificClient();
-client.CallSomeMethod();
+namespace Example
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var client = new CalendarificClient("YOUR_API_KEY");
 
+            var languages = await client.GetLanguagesAsync();
+            Console.WriteLine(languages);
+
+            var countries = await client.GetCountriesAsync();
+            Console.WriteLine(countries);
+
+            var parameters = new Dictionary<string, string> { { "country", "US" }, { "year", "2023" } };
+            var holidays = await client.GetHolidaysAsync(parameters);
+            Console.WriteLine(holidays);
+        }
+    }
+}
 ```
 
 ---
