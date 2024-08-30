@@ -15,7 +15,7 @@ namespace Calendarific
             _httpClient = new HttpClient()
             {
                 BaseAddress = new Uri("https://calendarific.com/api/v2/"),
-                DefaultRequestHeaders = { { "api_key", apiKey } }
+                DefaultRequestHeaders = { { "api_key", apiKey } },
             };
         }
 
@@ -35,7 +35,9 @@ namespace Calendarific
 
         public async Task<string> GetHolidaysAsync(Dictionary<string, string> parameters)
         {
-            var response = await _httpClient.GetAsync($"holidays?{string.Join("&", parameters.Select(kv => $"{kv.Key}={kv.Value}"))}");
+            var response = await _httpClient.GetAsync(
+                $"holidays?{string.Join("&", parameters.Select(kv => $"{kv.Key}={kv.Value}"))}"
+            );
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }

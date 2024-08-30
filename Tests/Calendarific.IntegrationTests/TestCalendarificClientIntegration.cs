@@ -35,7 +35,7 @@ namespace Calendarific.IntegrationTests
             var parameters = new Dictionary<string, string>
             {
                 { "country", "US" },
-                { "year", "2023" }
+                { "year", "2023" },
             };
             var result = await _client.GetHolidaysAsync(parameters);
             Assert.NotNull(result);
