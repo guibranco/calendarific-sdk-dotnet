@@ -1,7 +1,6 @@
-using Xunit;
-using Calendarific;
-using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Xunit;
 
 namespace Calendarific.IntegrationTests
 {

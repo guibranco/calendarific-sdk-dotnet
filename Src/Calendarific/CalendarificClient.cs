@@ -1,7 +1,8 @@
-using GuiStracini.SDKBuilder;
-using System.Threading.Tasks;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Calendarific
 {
@@ -11,10 +12,11 @@ namespace Calendarific
 
         public CalendarificClient(string apiKey)
         {
-            _httpClient = new HttpClientBuilder()
-                .WithBaseUrl("https://calendarific.com/api/v2/")
-                .WithDefaultHeader("api_key", apiKey)
-                .Build();
+            _httpClient = new HttpClient()
+            {
+                BaseAddress = new Uri("https://calendarific.com/api/v2/"),
+                DefaultRequestHeaders = { { "api_key", apiKey } }
+            };
         }
 
         public async Task<string> GetLanguagesAsync()
