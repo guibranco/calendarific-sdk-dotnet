@@ -10,6 +10,8 @@ environment:
     secure: +9ooTaCme0ygM72K+OnlXTLab2o5UAmPfBIAybHsP7btGLpPfgAYumPrGIWOpVX+bitVVcfOdMXAxY8dSGsbXJ8EpW6HTvMdQdn0AJ3MeQQ=
   SONAR_TOKEN:
     secure: LJpl7ith6wWsNX1wrMHSdgqDgji29wawZG+VZ5dAPPBSqz7/8y+PlGTd3RQR1z8D
+  apiKey:
+    secure: jYa53DCUT/2uCePOhs+z/8jmP+h9hYYztt0s/6AvQMhE5YSBX0gUk/CbjXW+uq22
 
 dotnet_csproj:
   patch: true
