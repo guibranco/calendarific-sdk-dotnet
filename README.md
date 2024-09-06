@@ -67,12 +67,35 @@ Implements all features of Calendarific API available at [Calendarific API Docum
 
 ## Usage
 
-```cs
+```csharp
+using Calendarific;
+using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
-//sample CSharp code showing how to use the lib
-var client = new CalendarificClient();
-client.CallSomeMethod();
+namespace Example
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var client = new CalendarificClient("YOUR_API_KEY");
 
+            var languages = await client.GetLanguagesAsync();
+            Console.WriteLine(languages);
+
+            var countries = await client.GetCountriesAsync();
+            Console.WriteLine(countries);
+
+            var parameters = new Dictionary<string, string>
+            {
+                { "country", "US" }, { "year", "2023" }
+            };
+            var holidays = await client.GetHolidaysAsync(parameters);
+            Console.WriteLine(holidays);
+        }
+    }
+}
 ```
 
 ---

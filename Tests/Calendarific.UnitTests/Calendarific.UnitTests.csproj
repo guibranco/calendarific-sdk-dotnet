@@ -4,6 +4,7 @@
     <ProjectGuid>2F57B9CD-5505-4456-B9FE-F91DCB4476D6</ProjectGuid>
     <TargetFramework>net6.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <UserSecretsId>0ca379a1-a20b-4821-9654-2108f491ebe5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +12,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="JunitXml.TestLogger" Version="4.0.254" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.0" />
     <PackageReference Include="Moq" Version="4.20.70" />
     <PackageReference Include="RichardSzalay.MockHttp" Version="7.0.0" />
