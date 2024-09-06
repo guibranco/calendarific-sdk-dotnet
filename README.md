@@ -87,7 +87,10 @@ namespace Example
             var countries = await client.GetCountriesAsync();
             Console.WriteLine(countries);
 
-            var parameters = new Dictionary<string, string> { { "country", "US" }, { "year", "2023" } };
+            var parameters = new Dictionary<string, string>
+            {
+                { "country", "US" }, { "year", "2023" }
+            };
             var holidays = await client.GetHolidaysAsync(parameters);
             Console.WriteLine(holidays);
         }
