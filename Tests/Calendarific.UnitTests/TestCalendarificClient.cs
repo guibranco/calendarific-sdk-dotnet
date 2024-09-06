@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Xunit;
 
 namespace Calendarific.UnitTests
@@ -10,7 +13,18 @@ namespace Calendarific.UnitTests
 
         public TestCalendarificClient()
         {
-            _client = new CalendarificClient("YOUR_API_KEY");
+            var configuration = new ConfigurationBuilder()
+                .AddUserSecrets<TestCalendarificClient>(true)
+                .AddEnvironmentVariables()
+                .Build();
+            var apiKey = string.IsNullOrWhiteSpace(configuration["apiKey"])
+                ? "__YOUR_API_KEY_HERE__"
+                : configuration["apiKey"];
+            var httpClient = new HttpClient()
+            {
+                BaseAddress = new Uri("https://calendarific.com/api/v2/"),
+            };
+            _client = new CalendarificClient(apiKey, httpClient);
         }
 
         [Fact]

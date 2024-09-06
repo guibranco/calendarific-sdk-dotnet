@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -8,27 +7,25 @@ namespace Calendarific
 {
     public class CalendarificClient
     {
+        private readonly string _apiKey;
         private readonly HttpClient _httpClient;
 
-        public CalendarificClient(string apiKey)
+        public CalendarificClient(string apiKey, HttpClient httpClient)
         {
-            _httpClient = new HttpClient
-            {
-                BaseAddress = new Uri("https://calendarific.com/api/v2/"),
-                DefaultRequestHeaders = { { "api_key", apiKey } },
-            };
+            _apiKey = apiKey;
+            _httpClient = httpClient;
         }
 
         public async Task<string> GetLanguagesAsync()
         {
-            var response = await _httpClient.GetAsync("languages");
+            var response = await _httpClient.GetAsync($"languages?api_key={_apiKey}");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
 
         public async Task<string> GetCountriesAsync()
         {
-            var response = await _httpClient.GetAsync("countries");
+            var response = await _httpClient.GetAsync($"countries?api_key={_apiKey}");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
@@ -36,7 +33,7 @@ namespace Calendarific
         public async Task<string> GetHolidaysAsync(Dictionary<string, string> parameters)
         {
             var response = await _httpClient.GetAsync(
-                $"holidays?{string.Join("&", parameters.Select(kv => $"{kv.Key}={kv.Value}"))}"
+                $"holidays?api_key={_apiKey}&{string.Join("&", parameters.Select(kv => $"{kv.Key}={kv.Value}"))}"
             );
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
