@@ -12,7 +12,7 @@ namespace Calendarific
 
         public CalendarificClient(string apiKey)
         {
-            _httpClient = new HttpClient()
+            _httpClient = new HttpClient
             {
                 BaseAddress = new Uri("https://calendarific.com/api/v2/"),
                 DefaultRequestHeaders = { { "api_key", apiKey } },
