@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GuiStracini.SDKBuilder" Version="3.1.142" />
+    <PackageReference Include="GuiStracini.SDKBuilder" Version="3.1.150" />
   </ItemGroup>
 
   <ItemGroup>
