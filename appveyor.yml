@@ -111,11 +111,11 @@ deploy:
     artifact: Package
 
   - provider: GitHub
-  on:
-   branch: main
-  tag: v$(appveyor_build_version)
-  release: "Release v$(appveyor_build_version)"
-  description: "Release of $(SOLUTION_NAME) - v$(appveyor_build_version)"
-  auth_token: $(GITHUB_TOKEN)
-  force_update: true
-  artifact: ZipFile, Package, Coverage
+    on:
+     branch: main
+    tag: v$(appveyor_build_version)
+    release: "Release v$(appveyor_build_version)"
+    description: "Release of $(SOLUTION_NAME) - v$(appveyor_build_version)"
+    auth_token: $(GITHUB_TOKEN)
+    force_update: true
+    artifact: ZipFile, Package, Coverage
